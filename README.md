@@ -1,77 +1,47 @@
 # IMDB API Clone With DRF
 
-<h3>📝 Reference Reading Links (Arranged According To Lectures)</h3>
+<h3>🔗 Final Project Links (Arranged According To Usage)</h3>
 <br>
 
-<b>🎥 Understanding REST API</b>
+<b>1. Admin Access</b>
 <ul>
-    <li>https://towardsdatascience.com/introduction-to-rest-apis-90b5d9676004</li>
+    <li>Admin Section: http://127.0.0.1:8000/dashboard/</li>
 </ul>
 <br>
 
-<b>🎥 Basic Django Setup</b>
+<b>2. Accounts</b>
 <ul>
-    <li>https://www.djangoproject.com/</li>
-    <li>https://code.visualstudio.com/download</li>
-    <li>https://www.tabnine.com/</li>
+    <li>Registration: http://127.0.0.1:8000/api/account/register/</li>
+    <li>Login: http://127.0.0.1:8000/api/account/login/</li>
+    <li>Logout: http://127.0.0.1:8000/api/account/logout/</li>
 </ul>
 <br>
 
-<b>🎥 DRF Introduction</b>
+<b>3. Stream Platforms</b>
 <ul>
-    <li>https://www.django-rest-framework.org/</li>
+    <li>Create Element & Access List: http://127.0.0.1:8000/api/watch/stream/</li>
+    <li>Access, Update & Destroy Individual Element: http://127.0.0.1:8000/api/watch/stream/<int:streamplatform_id>/</li>
+
 </ul>
 <br>
 
-<b>🎥 Django Relationships</b>
+<b>4. Watch List</b>
 <ul>
-    <li>https://docs.djangoproject.com/en/3.1/topics/db/examples/</li>
+    <li>Create & Access List: http://127.0.0.1:8000/api/watch/</li>
+    <li>Access, Update & Destroy Individual Element: http://127.0.0.1:8000/api/watch/<int:movie_id>/</li>
 </ul>
 <br>
 
-<b>🎥 Postman</b>
+<b>5. Reviews</b>
 <ul>
-    <li>https://www.postman.com/</li>
-    <li>https://www.postman.com/downloads/</li>
+    <li>Create Review For Specific Movie: http://127.0.0.1:8000/api/watch/<int:movie_id>/reviews/create/</li>
+    <li>List Of All Reviews For Specific Movie: http://127.0.0.1:8000/api/watch/<int:movie_id>/reviews/</li>
+    <li>Access, Update & Destroy Individual Review: http://127.0.0.1:8000/api/watch/reviews/<int:review_id>/</li>
 </ul>
 <br>
 
-<b>🎥 Basic Authentication</b>
+<b>6. User Review</b>
 <ul>
-    <li>https://www.base64encode.org/</li>
-    <li>https://www.toolsqa.com/postman/basic-authentication-in-postman/</li>
+    <li>Access All Reviews For Specific User: http://127.0.0.1:8000/api/watch/user-reviews/?username=example</li>
 </ul>
 <br>
-
-<b>🎥 JWT Authentication</b>
-<ul>
-<li>https://jwt.io/</li>
-<li>https://medium.com/devgorilla/how-to-log-out-when-using-jwt-a8c7823e8a6</li>
-<li>https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html</li>
-<li>https://medium.com/django-rest/django-rest-framework-jwt-authentication-94bee36f2af8https://stackoverflow.com/questions/61547014/restful-uri-trailing-slash-or-no-trailing-slash</li>
-</ul>
-<br>
-
-<b>🎥 Throttling Introduction</b>
-<ul>
-  <li>https://medium.com/analytics-vidhya/throttling-requests-with-django-rest-framework-for-different-http-methods-3ab0461044c</li>
-</ul>
-<br>
-
-<b>🎥 Filtering, Searching, Ordering</b>
-<ul>
-  <li>https://django-filter.readthedocs.io/en/stable/</li>
-  <li>https://stackoverflow.com/a/36940373/7846238</li>
-</ul>
-<br>
-
-<b>🎥 Browsable API Update</b>
-<ul>
-  <li>https://stackoverflow.com/questions/11898065/how-to-disable-admin-style-browsable-interface-of-django-rest-framework</li>
-</ul>
-<br>
-
-<b>🎥 Test Driven Development</b>
-<ul>
-  <li>https://medium.com/@ksarthak4ever/test-driven-development-tdd-in-django-and-django-rest-framework-drf-a889a8068cb7</li>
-</ul>
